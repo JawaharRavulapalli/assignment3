@@ -1,0 +1,307 @@
+
+/*css styling for all div blocks in home, education, projects and experience sections*/
+.about_div, .masters_div, .bachelors_div, .house_price_div, .customer_churn_div, .traffic_sign_div, .experience_div{
+    border: #000000;
+    height: 80 px;
+    width: 99%;
+    margin: 1%;
+    border: 1px solid black; 
+    box-sizing: border-box; 
+    margin-top:-15px
+}
+
+/*css styling for options in navigator section*/
+.f_nav{
+    padding-left: 110px;
+    display: block;          
+    margin-bottom: 5px;     
+    color: #333;
+    text-decoration: none;
+}
+
+.f_nav:hover {
+    text-decoration: underline;
+}
+
+/*css styling to place contact me and navigation section placing side of eachother*/
+.f1_div{
+    height: auto;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*css styling targeting only Navigation heading to move it right side*/
+.f1_div:nth-of-type(2) h2{
+    padding-left: 100px;
+}
+
+/*css styling for scrolling effect on navigation*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*css styling for img dimentions in contact section*/
+.logo{
+    margin-top: 0px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0%;
+    width: 50px;  
+    height: auto;
+}
+
+/*css styling for img and text placement in contact section*/
+.logo_section {
+    display:flex;              
+    align-items: center; 
+}
+
+/*css styling for all paraghraps with left padding*/
+p{
+    padding-left: 10px;
+}
+
+/*css styling for to define the profile image size*/
+.project_img{
+    width: 25%
+}
+
+.icon{
+    display: none;
+}
+/*css styling for aligning mail icon in home div to match other logos*/
+#gmail_logo{
+    margin-top:6px ;
+}
+
+
+/*css styling of background color to projects and experience sections*/
+#projects, #experience, #education{
+    margin-top: -20px;
+}
+
+/*css styling of background color to blogs and footer sections*/
+#blogs, footer{
+    margin-top: -20px;
+}
+
+/*css styling for footer*/
+footer{
+    margin-top: -8px;
+    overflow:hidden;
+}
+
+/*css styling for alligning boxes in blogs section*/
+.blogs_div{
+    margin-top:-15px; 
+    margin-left: 10px;
+    margin-bottom: 45px;
+}
+
+/*css styling boxes in blog sections*/
+.blogs_div{
+    color: black;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.5rem;
+    grid-template-areas: 
+    "box1 box2 box3" ;
+
+}
+
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  .hamburger div {
+    background-color: #d15c5c;
+    height: 5px;
+    margin: 3px 0;
+    width: 30px;
+    margin-top: -20px;
+  }  
+
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+@media only screen and (max-width:500px){
+    .blogs_div{
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 0.2rem;
+        
+    }
+    #Navigator{
+        display: none;
+    }
+
+    .project_img{
+        width: 55%
+    }
+    .center_logo {
+        width: 30px;  
+        height: auto;  
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: fixed;
+        
+      }
+      
+    #nav{
+        display: none;
+        flex-direction: column;
+        align-items: right;
+        height: auto;
+        width: 80%;
+    }
+      
+    #nav a {
+        text-align: right; /* Center text for each option */
+        border-bottom: 1px solid #eee; /* Add border between options */
+        width: 100%; /* Full width */
+        height: 30px; /* 30px height */
+        line-height: 30px; /* Align text vertically */
+        padding: 0; /* Reset padding */
+
+      }
+      #nav a:last-child {
+        display: none;
+      }
+
+}
+
+
+/*css styling assigning img height as 60% of box height in blog section */
+.box img{
+    height: 60%;
+}
+/*css styling assigning text height as 60% of box height in blog section */
+.box p{
+    height: 40%;
+    text-align: center;
+}
+
+/*css styling for all headers in website*/
+h4,h3, h2{
+    margin-left: 12px;
+}
+
+/*css styling for section seperator line*/
+hr{
+    width: 99%;
+    height: 2px;
+    background-color: black; 
+    border: none;            
+    margin-top: 0px;
+}
+
+/*css styling for font*/
+body {
+    font-family: 'Arvo', serif;
+    padding-top: 50px; 
+    background-color: beige;
+
+}
+
+/*css styling for nav bar*/   
+nav {
+    display: flex;
+    overflow: hidden; 
+    margin-bottom: -10px;        
+    background-color: #a4d4cc; 
+    position: fixed; 
+    width:100%; 
+    margin-top: -60px;
+    height: 40px;
+}
+
+/*css styling to allign menu options to right and configuration*/
+nav a {
+    float: right;            
+    display: flex;          
+    color: #000000;           
+    text-align: center;       
+    padding: 10px 10px;       
+    text-decoration: none;    
+}
+
+/*css styling to allign title to left*/
+nav .title {
+        float: left;               
+}
+
+/*css styling to give color when user hover over menu links*/
+nav a:hover {
+        background-color: hsl(32, 80%, 76%); 
+        color: black;
+}
+
+/*css styling for all images used*/
+img {
+   padding-top: 20px;
+   display: block; 
+   margin-left: auto;  
+   margin-right: auto;
+   width: 95%; 
+   height: 70%; 
+}
+
+/*css styling for name*/
+.name{
+    text-align: center;
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+/*css styling for tagline*/
+.tag_line{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+/*css style to place social media icons side by side in center of home section*/
+.center-div {
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 300px;  
+    margin-bottom: -30px; 
+}
+
+/*css style to adjust the height of social media icons*/
+.center_logo {
+    width: 40px;  
+    height: auto;  
+}
+
+
+
